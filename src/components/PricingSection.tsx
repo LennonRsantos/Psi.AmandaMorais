@@ -1,6 +1,6 @@
 import FadeIn from "./FadeIn";
 
-const CHECKOUT_URL = "https://pay.kiwify.com.br/SEU-LINK-DE-CHECKOUT";
+const CHECKOUT_URL = "https://pay.kiwify.com.br/iy9ZL2H";
 
 const INCLUDES = [
   "6 módulos + bônus: do pensamento automático ao fechamento clínico",
