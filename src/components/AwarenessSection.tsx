@@ -26,9 +26,6 @@ export default function AwarenessSection() {
     <section className="bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4">
         <FadeIn className="mx-auto max-w-2xl text-center">
-          <span className="text-sm font-semibold uppercase tracking-wider text-primary-dark">
-            A dor
-          </span>
           <h2 className="mt-2 font-display text-3xl uppercase tracking-wide text-text-dark sm:text-4xl">
             A dificuldade raramente está na técnica que você escolheu.
           </h2>
@@ -51,7 +48,7 @@ export default function AwarenessSection() {
                   <i className={`bi ${problem.icon} text-lg`} />
                 </div>
                 <span className="mt-4 block text-xs font-bold tracking-widest text-primary-dark uppercase">
-                  Ponto {String(index + 1).padStart(2, "0")}
+                  {String(index + 1).padStart(2, "0")}.
                 </span>
                 <h3 className="mt-1 font-semibold text-text-dark">
                   {problem.title}

@@ -8,7 +8,7 @@ const FAQS = [
   {
     question: "Para quem é esse Intensivo?",
     answer:
-      "Para psicólogas que atendem com TCC há até uns 5 anos, já conhecem as técnicas, mas ainda se sentem inseguras na hora de aplicar, usam sempre as mesmas duas ou três e ficam perdidas quando o paciente não responde como o esperado. Não é uma formação teórica do zero, nem um pacote de fichas prontas sem o raciocínio por trás.",
+      "Para psicólogas que atendem abordagens cognitivas comportamentais como a TCC, ACT, DBT, já conhecem as técnicas, mas ainda se sentem inseguras na hora de aplicar, usam sempre as mesmas duas ou três e ficam perdidas quando o paciente não responde como o esperado. Não é uma formação teórica do zero, nem um pacote de fichas prontas sem o raciocínio por trás.",
   },
   {
     question: "Por quanto tempo terei acesso ao conteúdo?",

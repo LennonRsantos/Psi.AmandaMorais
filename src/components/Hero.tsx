@@ -27,7 +27,7 @@ export default function Hero() {
 
           <FadeIn delay={0.2}>
             <p className="mt-6 text-balance text-lg text-text-muted sm:text-xl">
-              Domine a condução das mais eficazes ou estratégicas técnicas
+              Domine a condução das mais estratégicas técnicas
               cognitivas e comportamentais usadas na clínica.
             </p>
           </FadeIn>

@@ -81,15 +81,13 @@ export default function ModulesSection() {
     <section className="bg-soft py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4">
         <FadeIn className="mx-auto max-w-2xl text-center">
-          <span className="text-sm font-semibold uppercase tracking-wider text-primary-dark">
-            O que faltava
-          </span>
           <h2 className="mt-2 text-balance font-display text-3xl uppercase tracking-wide text-text-dark sm:text-4xl">
-            Era um <span className="text-primary-dark">fio condutor</span>{" "}
-            entre as técnicas que você já domina
+            O que faltava era o 
+            <span className="text-primary-dark"> raciocinio por trás das técnicas</span>{" "}
+            que você já domina
           </h2>
           <p className="mt-4 text-lg text-text-muted">
-            O passo a passo do Intensivo, módulo a módulo.
+            O passo a passo
           </p>
         </FadeIn>
 

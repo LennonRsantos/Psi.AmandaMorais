@@ -14,10 +14,10 @@ export default function Home() {
       <TopBar />
       <main className="flex-1">
         <Hero />
-        <AuthoritySection />
         <AwarenessSection />
         <ModulesSection />
         <PricingSection />
+        <AuthoritySection />
         <FaqSection />
       </main>
       <Footer />
