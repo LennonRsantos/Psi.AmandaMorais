@@ -3,7 +3,7 @@ import FadeIn from "./FadeIn";
 const CHECKOUT_URL = "https://pay.kiwify.com.br/iy9ZL2H";
 
 const INCLUDES = [
-  "6 módulos + bônus: do pensamento automático ao fechamento clínico",
+  "5 módulos + bônus: do pensamento automático ao fechamento clínico",
   "Acesso imediato e conteúdo disponível por 12 meses",
   "Certificado de participação com carga horária",
 ];
