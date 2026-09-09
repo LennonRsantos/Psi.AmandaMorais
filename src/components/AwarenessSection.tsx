@@ -27,7 +27,9 @@ export default function AwarenessSection() {
       <div className="mx-auto max-w-6xl px-4">
         <FadeIn className="mx-auto max-w-2xl text-center">
           <h2 className="mt-2 font-display text-3xl uppercase tracking-wide text-text-dark sm:text-4xl">
-            A dificuldade raramente está na técnica que você escolheu.
+            A dificuldade raramente está
+            <br />
+            na técnica que você escolheu
           </h2>
         </FadeIn>
 
