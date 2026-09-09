@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #1f1e24;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: #9970b9;
+  --color-primary-dark: #704e8c;
+  --color-primary-light: #af90ca;
+  --color-soft: #eae4f2;
+  --color-soft-alt: #efe8f4;
+  --color-text-dark: #1f1e24;
+  --color-text-muted: #555555;
+
+  --font-display: var(--font-anton);
+  --font-body: var(--font-public-sans);
+  --font-hand: var(--font-caveat);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+.bg-grid-pattern {
+  background-image:
+    linear-gradient(to right, rgba(112, 78, 140, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(112, 78, 140, 0.08) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.bg-glow-blobs {
+  background-image:
+    radial-gradient(38% 45% at 18% 12%, rgba(153, 112, 185, 0.35), transparent 70%),
+    radial-gradient(32% 40% at 85% 15%, rgba(175, 144, 202, 0.3), transparent 70%),
+    radial-gradient(40% 45% at 50% 100%, rgba(112, 78, 140, 0.18), transparent 70%);
+}
+
+.bg-gradient-brand {
+  background-image: linear-gradient(
+    100deg,
+    var(--color-primary-light),
+    var(--color-primary),
+    var(--color-primary-dark)
+  );
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee-scroll 28s linear infinite;
+}
