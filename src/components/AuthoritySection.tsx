@@ -31,7 +31,7 @@ export default function AuthoritySection() {
             <div className="relative mx-auto w-full max-w-sm">
               <div className="relative aspect-4/5 w-full overflow-hidden rounded-3xl border-4 border-white bg-linear-to-br from-primary-light to-primary-dark shadow-xl shadow-primary-dark/20">
                 <Image
-                  src="/amanda.jpeg"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/amanda.jpeg`}
                   alt="Amanda Morais"
                   fill
                   sizes="(min-width: 640px) 384px, 100vw"
