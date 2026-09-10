@@ -65,9 +65,33 @@ const MODULES = [
     tag: "Bônus",
     title: "+ Bônus",
     bullets: [
-      "Workshop de questionamento socrático",
-      "Um bônus surpresa",
-      "Ficha com todos os recursos citados no intensivo",
+      {
+        title: "Bônus 1 — Ju da Formulação",
+        description:
+          "Acesso à IA treinada para te ajudar a formular casos clínicos com mais clareza e agilidade.",
+      },
+      {
+        title: "Bônus 2 — Intensivão de Diálogo Socrático (em duas partes)",
+        description:
+          "Treinamento completo sobre questionamento socrático, do conteúdo teórico à prática guiada.",
+      },
+      {
+        title: "Parte 1 — Aula gravada",
+        description:
+          "A aula completa do workshop de lançamento sobre questionamento socrático e estratégias de descoberta guiada, disponível na área de membros. Assistiu ao vivo? Reveja quando quiser. Não conseguiu? Assiste de lá.",
+        noIcon: true,
+      },
+      {
+        title: "Parte 2 — Encontro mão na massa",
+        description:
+          "Treinamento prático ao vivo: role play, exercícios e raciocínio aplicado a casos clínicos reais. O passo a passo de implementação que vai além da teoria.",
+        noIcon: true,
+      },
+      {
+        title: "Bônus 3 — Aula de IA aplicada à clínica",
+        description:
+          "Como usar ferramentas de inteligência artificial para personalizar fichas, elaborar psicoeducações, criar cartões de enfrentamento, resumos e materiais visuais criativos para os seus pacientes.",
+      },
     ],
     isBonus: true,
   },
@@ -145,15 +169,33 @@ export default function ModulesSection() {
                 ))}
 
                 {active.bullets && (
-                  <ul className="mt-3 space-y-2">
-                    {active.bullets.map((bullet) => (
-                      <li key={bullet} className="flex items-start gap-2.5">
-                        <i className="bi bi-check-circle-fill mt-0.5 shrink-0 text-base text-primary" />
-                        <span className="leading-relaxed text-text-muted">
-                          {bullet}
-                        </span>
-                      </li>
-                    ))}
+                  <ul className="mt-3 space-y-3">
+                    {active.bullets.map((bullet) => {
+                      const key = typeof bullet === "string" ? bullet : bullet.title;
+                      const noIcon = typeof bullet !== "string" && bullet.noIcon;
+                      return (
+                        <li
+                          key={key}
+                          className={`flex items-start gap-2.5 ${noIcon ? "pl-6" : ""}`}
+                        >
+                          {!noIcon && (
+                            <i className="bi bi-check-circle-fill mt-0.5 shrink-0 text-base text-primary" />
+                          )}
+                          {typeof bullet === "string" ? (
+                            <span className="leading-relaxed text-text-muted">
+                              {bullet}
+                            </span>
+                          ) : (
+                            <span className="leading-relaxed text-text-muted">
+                              <span className="block font-semibold text-text-dark">
+                                {bullet.title}
+                              </span>
+                              {bullet.description}
+                            </span>
+                          )}
+                        </li>
+                      );
+                    })}
                   </ul>
                 )}
 
