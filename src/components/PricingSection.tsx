@@ -40,7 +40,7 @@ export default function PricingSection() {
 
             <div className="mt-8 flex flex-col items-center border-t border-black/5 pt-8">
               <span className="font-display text-6xl text-text-dark">
-                R$ 97<span className="text-2xl">,00</span>
+                R$ 127<span className="text-2xl">,00</span>
               </span>
               <span className="mt-1 text-sm text-text-muted">
                 à vista no Pix ou em até 12x no cartão
