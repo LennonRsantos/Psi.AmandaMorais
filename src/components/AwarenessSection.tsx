@@ -1,4 +1,5 @@
 import FadeIn from "./FadeIn";
+import CtaButton from "./CtaButton";
 
 const PROBLEMS = [
   {
@@ -63,6 +64,10 @@ export default function AwarenessSection() {
             </FadeIn>
           ))}
         </div>
+
+        <FadeIn delay={0.4} className="mt-10 flex justify-center">
+          <CtaButton label="Acessar agora" />
+        </FadeIn>
       </div>
     </section>
   );

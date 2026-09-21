@@ -1,6 +1,5 @@
 import FadeIn from "./FadeIn";
-
-const CHECKOUT_URL = "https://pay.kiwify.com.br/iy9ZL2H";
+import CtaButton from "./CtaButton";
 
 const INCLUDES = [
   "5 módulos + bônus: do pensamento automático ao fechamento clínico",
@@ -10,16 +9,16 @@ const INCLUDES = [
 
 export default function PricingSection() {
   return (
-    <section className="relative overflow-hidden bg-primary-dark py-16 sm:py-24">
+    <section className="relative overflow-hidden bg-soft-alt py-16 sm:py-24">
       <div className="bg-glow-blobs pointer-events-none absolute inset-0 opacity-40" />
 
       <div className="relative mx-auto max-w-6xl px-4">
         <FadeIn className="mx-auto max-w-2xl text-center">
-          <h2 className="text-balance font-display text-3xl uppercase tracking-wide text-white sm:text-4xl">
+          <h2 className="text-balance font-display text-3xl uppercase tracking-wide text-text-dark sm:text-4xl">
             Domine a condução das mais eficazes técnicas cognitivas e
             comportamentais usadas na clínica
           </h2>
-          <p className="mt-4 text-lg text-primary-light">
+          <p className="mt-4 text-lg text-text-muted">
             Tudo o que você precisa para conduzir sessões com segurança
             técnica, em um único intensivo.
           </p>
@@ -47,13 +46,10 @@ export default function PricingSection() {
               </span>
             </div>
 
-            <a
-              href={CHECKOUT_URL}
-              className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-brand px-6 py-4 text-base font-bold text-white shadow-lg shadow-primary/30 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary-dark/30"
-            >
-              Garantir Minha Vaga Agora
-              <i className="bi bi-arrow-right text-lg" />
-            </a>
+            <CtaButton
+              label="Garantir Minha Vaga Agora"
+              className="mt-8 w-full py-4"
+            />
 
             <div className="mt-5 flex items-center justify-center gap-4 text-xs text-text-muted">
               <span className="inline-flex items-center gap-1">

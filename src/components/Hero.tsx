@@ -1,5 +1,6 @@
 import FadeIn from "./FadeIn";
 import MarqueeBanner from "./MarqueeBanner";
+import CtaButton from "./CtaButton";
 
 export default function Hero() {
   return (
@@ -30,6 +31,10 @@ export default function Hero() {
               Domine a condução das mais estratégicas técnicas
               cognitivas e comportamentais usadas na clínica.
             </p>
+          </FadeIn>
+
+          <FadeIn delay={0.3} className="mt-8 flex justify-center">
+            <CtaButton label="Quero começar" />
           </FadeIn>
         </div>
       </div>

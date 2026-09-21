@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import FadeIn from "./FadeIn";
+import CtaButton from "./CtaButton";
 
 const FAQS = [
   {
@@ -84,6 +85,10 @@ export default function FaqSection() {
               </div>
             );
           })}
+        </FadeIn>
+
+        <FadeIn delay={0.2} className="mt-10 flex justify-center">
+          <CtaButton label="Quero garantir minha vaga" />
         </FadeIn>
       </div>
     </section>

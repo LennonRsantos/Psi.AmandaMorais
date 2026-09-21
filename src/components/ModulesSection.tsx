@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import FadeIn from "./FadeIn";
+import CtaButton from "./CtaButton";
 
 const MODULES = [
   {
@@ -37,20 +38,20 @@ const MODULES = [
   },
   {
     tag: "Módulo 3",
-    title: "Regulação Emocional",
-    bullets: [
-      "Quando regular a emoção antes de reestruturar o pensamento",
-      "Como reconhecer a evitação disfarçada de distração",
-      "Quais técnicas usar em cada situação",
-    ],
-  },
-  {
-    tag: "Módulo 4",
     title: "Experimento Comportamental e Plano de Ação",
     bullets: [
       "Como estruturar um experimento comportamental a partir de queixas variadas",
       "Diferença entre exposição interoceptiva e emocional",
       "Como montar um plano de ação que dialoga com a realidade do paciente",
+    ],
+  },
+  {
+    tag: "Módulo 4",
+    title: "Regulação Emocional",
+    bullets: [
+      "Quando regular a emoção antes de reestruturar o pensamento",
+      "Como reconhecer a evitação disfarçada de distração",
+      "Quais técnicas usar em cada situação",
     ],
   },
   {
@@ -212,6 +213,10 @@ export default function ModulesSection() {
                 )}
               </motion.div>
             </AnimatePresence>
+          </div>
+
+          <div className="mt-10 flex justify-center">
+            <CtaButton label="Adquirir" />
           </div>
         </FadeIn>
       </div>
