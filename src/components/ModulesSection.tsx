@@ -107,7 +107,7 @@ export default function ModulesSection() {
       <div className="mx-auto max-w-6xl px-4">
         <FadeIn className="mx-auto max-w-2xl text-center">
           <h2 className="mt-2 text-balance font-display text-3xl uppercase tracking-wide text-text-dark sm:text-4xl">
-            O que faltava era o 
+            O que faltava era o
             <span className="text-primary-dark"> raciocínio por trás das técnicas</span>{" "}
             que você já domina
           </h2>

@@ -4,6 +4,7 @@ import AwarenessSection from "@/components/AwarenessSection";
 import ModulesSection from "@/components/ModulesSection";
 import AuthoritySection from "@/components/AuthoritySection";
 import PricingSection from "@/components/PricingSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import FaqSection from "@/components/FaqSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -14,10 +15,11 @@ export default function Home() {
       <TopBar />
       <main className="flex-1">
         <Hero />
+        <PricingSection />
         <AwarenessSection />
         <ModulesSection />
-        <PricingSection />
         <AuthoritySection />
+        <TestimonialsSection />
         <FaqSection />
       </main>
       <Footer />
